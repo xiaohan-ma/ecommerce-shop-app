@@ -1,0 +1,36 @@
+.cartProductContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  height: 7rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 20px rgba(200, 210, 210, 0.583);
+}
+
+.cartProductDetail {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cartProductDetail h2 {
+  font-size: 0.9rem;
+}
+
+.cartProductDetail h3 {
+  font-size: 0.8rem;
+}
+
+.cartImg {
+  height: 85%;
+  width: 20%;
+}
+
+.cartProductContainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}

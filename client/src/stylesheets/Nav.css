@@ -1,0 +1,110 @@
+/** General navigation bar styles **/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 6rem;
+  border: 0 solid #dddfe5;
+  border-bottom-width: 1px;
+  border-color: rgba(65, 65, 72, 0.08);
+}
+
+/** Logo section **/
+.logo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+.logo svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #ffbb00;
+}
+
+/** Categories section **/
+.navCategories {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 800;
+  width: 100%;
+}
+.navCategories ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.navCategories li {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navCategories li:hover {
+  opacity: 0.7;
+}
+
+/** Basket button **/
+.navBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navBtn svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #222230;
+}
+
+.navBtn button:hover svg {
+  opacity: 0.7;
+}
+
+#basketBtn {
+  display: flex;
+}
+
+#cartCount {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 16px;
+  width: 16px;
+  color: white;
+  background-color: #80a7dd;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0rem 0.8rem;
+  }
+
+  .navCategories ul {
+    gap: 0.6rem;
+  }
+
+  .navCategories li {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,79 @@
+.featuredItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 2rem;
+  box-shadow: 10px 20px 35px rgba(200, 210, 210, 0.379);
+}
+
+.featuredDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.featuredItem h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.featuredItem h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.featuredImg {
+  height: 55%;
+  width: 85%;
+}
+
+.featuredImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+/* Add to basket button */
+.addBtn {
+  cursor: pointer;
+  border-radius: 2rem;
+  width: 8rem;
+  height: 2.5rem;
+  padding: 0.15rem;
+  background-color: #cfe2fd;
+  color: #20406e;
+}
+
+.addBtn:hover {
+  background-color: #20406e;
+  color: #cfe2fd;
+}
+
+@media screen and (max-width: 768px) {
+  .featuredItem {
+    width: 10rem;
+    height: 15rem;
+    padding: 0.2rem 0.2rem;
+  }
+
+  .featuredItem h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  .featuredItem h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .addBtn {
+    width: fit-content;
+    height: fit-content;
+  }
+}

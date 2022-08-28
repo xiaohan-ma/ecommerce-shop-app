@@ -1,0 +1,105 @@
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 2rem;
+  box-shadow: 10px 20px 35px rgba(200, 210, 210, 0.379);
+}
+
+.productDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.productContainer h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.productContainer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.productImgContainer {
+  height: 55%;
+  width: 85%;
+}
+
+.productContainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+/** Quantity select **/
+
+#quantitySelect {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+#quantitySelect button {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+#quantitySelect h4 {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 22px;
+  width: 22px;
+  color: white;
+  background-color: #80a7dd;
+  z-index: 100;
+}
+
+/* Add to basket button */
+.addBtn {
+  margin-top: 0.4rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-weight: 600;
+  width: 8rem;
+  height: 2.5rem;
+  padding: 0.15rem;
+  background-color: #cfe2fd;
+  color: #20406e;
+}
+
+.addBtn:hover {
+  background-color: #20406e;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .productContainer {
+    width: 10rem;
+    height: 15rem;
+    padding: 0.2rem 0.2rem;
+  }
+
+  .productContainer h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  .productContainer h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .addBtn {
+    width: fit-content;
+    height: fit-content;
+  }
+}

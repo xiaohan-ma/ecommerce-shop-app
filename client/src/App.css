@@ -1,0 +1,57 @@
+/** Global CSS **/
+.App {
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  color: #222230;
+}
+
+/** Pages Container Div **/
+.container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/** Pages overall styles **/
+h1,
+h2 {
+  color: #222230;
+}
+
+ul,
+li {
+  list-style-type: none;
+  color: #222230;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  margin: 0;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+}

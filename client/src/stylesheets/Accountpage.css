@@ -1,0 +1,76 @@
+.accountContainer {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.accountContainer h1 {
+  font-size: 25px;
+  padding: 2rem;
+}
+
+.accountContainer h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.accountInfo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/** Options bar **/
+.options {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 30%;
+  padding: 1.8rem 2rem;
+  gap: 3rem;
+}
+
+.options ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.options ul li {
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 520;
+  height: 3.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 20px rgba(200, 210, 210, 0.583);
+}
+
+/** Past order section **/
+.pastOrderSection {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-items: center;
+  text-align: left;
+  padding: 1.8rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 20px rgba(200, 210, 210, 0.583);
+}
+
+@media screen and (max-width: 768px) {
+  .accountInfo {
+    flex-direction: column;
+  }
+
+  .pastOrderSection {
+    width: auto;
+  }
+  .options {
+    width: auto;
+  }
+}
